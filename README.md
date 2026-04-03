@@ -1,54 +1,178 @@
-# Debate Crew
+# 🧠 AI Debate Arena
 
-Welcome to the Debate Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+### Multi-Agent Reasoning System using CrewAI + Groq (LLaMA 3.1)
 
-## Installation
+> An intelligent debate simulation system where autonomous AI agents argue opposing viewpoints and a judge agent evaluates them based on logic, evidence, and persuasion.
 
-Ensure you have Python >=3.10 <3.14 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+---
 
-First, if you haven't already, install uv:
+## 🚀 Overview
 
-```bash
-pip install uv
+AI Debate Arena is a **multi-agent system** built using CrewAI that simulates structured debates.
+It leverages modern LLMs to generate **high-quality arguments**, perform **critical reasoning**, and deliver a **final verdict** based purely on argument strength.
+
+This project demonstrates:
+
+* Multi-agent collaboration
+* Structured reasoning
+* Prompt engineering
+* Real-world AI orchestration
+
+---
+
+## 🧩 System Architecture
+
+```
+User Input (Topic)
+        ↓
+Debater Agent (FOR)
+        ↓
+Debater Agent (AGAINST)
+        ↓
+Judge Agent (Evaluation)
+        ↓
+Final Decision + Reasoning
 ```
 
-Next, navigate to your project directory and install the dependencies:
+---
 
-(Optional) Lock the dependencies and install them by using the CLI command:
+## 🤖 Agents
+
+### 🟢 Debater Agent
+
+* Generates arguments **for and against**
+* Focuses on:
+
+  * Logical structure
+  * Real-world examples
+  * Persuasive reasoning
+
+### ⚖️ Judge Agent
+
+* Evaluates both sides objectively
+* Uses:
+
+  * Clarity
+  * Logic
+  * Evidence
+  * Persuasiveness
+
+---
+
+## 🛠️ Tech Stack
+
+* Python
+* CrewAI (multi-agent orchestration)
+* Groq API (LLaMA 3.1)
+* LiteLLM
+* Streamlit
+
+---
+
+## ⚙️ Installation
+
 ```bash
-crewai install
+git clone https://github.com/Prateek13052003/ai-debate-crewai.git
+cd ai-debate-crewai
+python -m venv .venv
+source .venv/bin/activate
+pip install crewai litellm streamlit
 ```
-### Customizing
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+---
 
-- Modify `src/debate/config/agents.yaml` to define your agents
-- Modify `src/debate/config/tasks.yaml` to define your tasks
-- Modify `src/debate/crew.py` to add your own logic, tools and specific args
-- Modify `src/debate/main.py` to add custom inputs for your agents and tasks
-
-## Running the Project
-
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
+## 🔑 Environment Setup
 
 ```bash
-$ crewai run
+export GROQ_API_KEY=your_api_key_here
 ```
 
-This command initializes the debate Crew, assembling the agents and assigning them tasks as defined in your configuration.
+---
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+## ▶️ Run via CLI
 
-## Understanding Your Crew
+```bash
+crewai run
+```
 
-The debate Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+---
 
-## Support
+## 🌐 Run Web Interface
 
-For support, questions, or feedback regarding the Debate Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
+```bash
+streamlit run app.py
+```
 
-Let's create wonders together with the power and simplicity of crewAI.
+---
+
+## 📊 Execution Output
+
+### 🔹 Task Execution Flow
+
+![Execution](./assets/task1.png)
+
+---
+
+### 🔹 Agent Reasoning Phase
+
+![Reasoning](./assets/task2.png)
+
+---
+
+### 🔹 Final Judgment Output
+
+![Final Output](./assets/task3.png)
+
+---
+
+## 🧠 Example Result
+
+> After evaluating both sides, the system concludes that
+> **the argument against strict regulation of LLMs is more convincing**,
+> due to deeper reasoning, stronger examples, and better handling of trade-offs.
+
+---
+
+## 💡 Key Highlights
+
+* ⚡ Real-time multi-agent reasoning
+* 🧠 Structured argument generation
+* ⚖️ Objective evaluation system
+* 🔁 Modular & extensible architecture
+* 🌐 UI-ready (Streamlit integration)
+
+---
+
+## 🔬 What Makes This Project Strong
+
+This project demonstrates:
+
+* Agent-based system design
+* Prompt engineering
+* LLM orchestration
+* Decision-making pipelines
+* Scalable AI architecture
+
+---
+
+## 📈 Future Enhancements
+
+* Multi-round debates
+* Memory-enabled agents
+* Multi-judge voting system
+* Chat-style UI
+* Deployment (Render / AWS / Docker)
+
+---
+
+## 👨‍💻 Author
+
+**Prateek Choudhary**
+🔗 https://github.com/Prateek13052003
+
+---
+
+## ⭐ Support
+
+If you found this project interesting, consider giving it a ⭐
+It helps a lot!
