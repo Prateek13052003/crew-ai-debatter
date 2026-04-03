@@ -121,7 +121,7 @@ streamlit run app.py
 
 ### 🔹 Final Judgment Output
 
-![Final Output](Final Output.png)
+![Final Output](Final.png)
 
 ---
 
