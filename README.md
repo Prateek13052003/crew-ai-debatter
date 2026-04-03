@@ -109,7 +109,7 @@ streamlit run app.py
 
 ### 🔹 Task Execution Flow
 
-![Execution](./assets/Execution.png)
+![Execution](Execution.png)
 
 ---
 
