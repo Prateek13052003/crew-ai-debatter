@@ -115,13 +115,13 @@ streamlit run app.py
 
 ### 🔹 Agent Reasoning Phase
 
-![Reasoning](./assets/task2.png)
+![Reasoning](Reasoning.png)
 
 ---
 
 ### 🔹 Final Judgment Output
 
-![Final Output](./assets/task3.png)
+![Final Output](Final Output.png)
 
 ---
 
